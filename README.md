@@ -5,7 +5,7 @@
 Requisitos:
 - [Docker](https://docs.docker.com/install/)
 - Versão GitLab - v10.1.4
-- Instalado o Docker-compose,disponíveil [aqui](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7))
+- Instalado o [Docker-compose](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7))
 - Versão Runner - v10.1.0
 
 Crie uma pasta e dentro dela adicione um arquivo que será nosso docker-compose (Entender sobre Docker-compose clique [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner. a baixo nosso docker-compose.yml
@@ -43,18 +43,18 @@ networks:
   ````
   Depois de criado, ainda na pasta digite esse comando
   
-    docker-compose up -d
+       docker-compose up -d
   
   **Acesso ao gitlab:**
   1. No primeiro acesso ele vai solicitar a nova senha para o usuário “root”.
   
-                    imagem aqui
+                         imagem aqui
   
   2. Agora que já acessamos nosso Gitlab, precisamos configurar o Gitlab Runner
   
-                      imagem aqui
+                         imagem aqui
   
   3. Não temos nenhum runner configurado ainda, vamos configurar por comandos via docker
   
-    docker exec -i -t Gitlab_Runner sudo gitlab-runner register
+         docker exec -i -t Gitlab_Runner sudo gitlab-runner register
   
