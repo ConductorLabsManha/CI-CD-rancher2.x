@@ -14,7 +14,7 @@ O Runner é uma aplicação que roda separadamente e trabalha junto ao Gitlab CI
 
 Ultilizamos o docker-compose (Entender sobre Docker-compose clique [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner. a baixo nosso docker-compose.yml
 
-version: '3'
+```version: '3'
 services:
  Gitlab_CI:
   container_name: Gitlab_CI
@@ -41,3 +41,4 @@ services:
 networks:
  DockerLAN:
   driver: bridge
+  ````
