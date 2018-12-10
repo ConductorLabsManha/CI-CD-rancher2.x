@@ -42,3 +42,5 @@ networks:
  DockerLAN:
   driver: bridge
   ````
+  Depois de criado, ainda na pasta digite esse comando
+  > docker-compose up -d
