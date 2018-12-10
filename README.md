@@ -12,4 +12,4 @@ Primeiro passo, precisamos de um Runner rodando...
 humm.. o que seria um Runner?
 O Runner é uma aplicação que roda separadamente e trabalha junto ao Gitlab CI-CD, executando os deploy e os build das aplicações identificadas. Ou seja, para que você possa efetuar todo workflow de CI/CD é necessária ao menos 1 instância do Gitlab CI/CD e 1 Gitlab Runner rodando em um server, no pc ou docker.
 
-Ultilizamos o docker-compose (Entender sobre Docker-compose [clique aqui]https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/ ) para subir container do gitlab_CI e gitlab_Runner      
+Ultilizamos o docker-compose (Entender sobre Docker-compose [clique aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir container do gitlab_CI e gitlab_Runner      
