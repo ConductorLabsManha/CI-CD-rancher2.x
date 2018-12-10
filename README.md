@@ -4,8 +4,7 @@
 
 Requisitos:
 - Versão GitLab - v10.1
-- Instalado o Docker-compose [a link] https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7)
-[a relative link](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7))
+- Instalado o Docker-compose [a Download aqui](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7))
 
 Primeiro passo, precisamos de um Runner rodando... 
 
