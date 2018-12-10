@@ -4,19 +4,16 @@
 
 Requisitos:
 - Docker 
-- Versão GitLab - v10.1
+- Versão GitLab - v10.1.4
 - Instalado o Docker-compose,disponíveil [aqui](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7))
+- Versão Runner - v10.1.0
 
-No terminal, jogue esse comando para fazer o download da imagem do gitlab CE (Community Edition):
- 
- 1. docker pull gitlab/gitlab-ce:10.1.4-ce.0
+Crie uma pasta e dentro dela adicione um arquivo que será nosso docker-compose (Entender sobre Docker-compose clique [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner. a baixo nosso docker-compose.yml
 
-precisamos de um Runner rodando. humm.. o que seria um Runner?
+precisamos de um **Runner** rodando. humm.. o que seria um Runner?
 O Runner é uma aplicação que roda separadamente e trabalha junto ao Gitlab CI-CD, executando os deploy e os build das aplicações identificadas. Ou seja, para que você possa efetuar todo workflow de CI/CD é necessária ao menos 1 instância do Gitlab CI/CD e 1 Gitlab Runner rodando em um server, no pc ou docker.
-
-Ultilizamos o docker-compose (Entender sobre Docker-compose clique [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner. a baixo nosso docker-compose.yml
-
-```version: '3'
+```
+version: '3'
 services:
  Gitlab_CI:
   container_name: Gitlab_CI
@@ -45,4 +42,9 @@ networks:
   driver: bridge
   ````
   Depois de criado, ainda na pasta digite esse comando
-  1. docker-compose up -d
+  > docker-compose up -d
+  
+  **Acesso ao gitlab:**
+  1. No primeiro acesso ele vai solicitar a nova senha para o usuário “root”
+  2. Agora que já acessamos nosso Gitlab, precisamos configurar o Gitlab Runner
+  
