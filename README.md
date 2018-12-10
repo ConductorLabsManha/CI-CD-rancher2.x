@@ -1,8 +1,8 @@
-# CI-CD-rancher2.x
+# CI-CD IN RANCHER 2.X
 
-# CI in gitlab
+# CI IN GITLAB
 
-Requisitos 
+Requisitos:
 - Versão GitLab - v10.1
 - Instalado o Docker-compose
 
