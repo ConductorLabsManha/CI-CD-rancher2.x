@@ -8,10 +8,13 @@ Requisitos:
 - Instalado o [Docker-compose](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7))
 - Versão Runner - v10.1.0
 
-Crie uma pasta e dentro dela adicione um arquivo que será nosso docker-compose (Entender sobre Docker-compose [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner. a baixo nosso docker-compose.yml
+Crie uma pasta e dentro dela adicione um arquivo que será nosso docker-compose (Entender sobre Docker-compose [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner.
 
 precisamos de um **Runner** rodando. humm.. o que seria um Runner?
 O Runner é uma aplicação que roda separadamente e trabalha junto ao Gitlab CI-CD, executando os deploy e os build das aplicações identificadas. Ou seja, para que você possa efetuar todo workflow de CI/CD é necessária ao menos 1 instância do Gitlab CI/CD e 1 Gitlab Runner rodando em um server, no pc ou docker.
+
+> docker-compose.yml
+
 ```
 version: '3'
 services:
