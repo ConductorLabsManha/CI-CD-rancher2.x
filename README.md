@@ -66,7 +66,7 @@ networks:
    
    ![image](https://user-images.githubusercontent.com/45598049/49811654-7789f980-fd42-11e8-90c5-7fbe9a295864.png)
     
-   Com comandos docker, abra o terminal e jogue esse comando 
+   Com comandos docker, abra o terminal e cole esse comando, irá regristar nosso primeiro runner :) 
     
     1. docker exec -i -t Gitlab_Runner sudo gitlab-runner register
   
