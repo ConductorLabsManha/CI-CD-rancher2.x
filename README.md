@@ -54,9 +54,18 @@ networks:
   ![image](https://user-images.githubusercontent.com/45598049/49802444-ac3e8680-fd2b-11e8-8486-92af5b9b261d.png)
 
   
-  2. Agora que já acessamos nosso Gitlab, precisamos configurar o Gitlab Runner
+  2. Agora que já acessamos nosso Gitlab, precisamos configurar o Gitlab Runner, clique em admin
   
-                         imagem aqui
+  ![image](https://user-images.githubusercontent.com/45598049/49811259-a94e9080-fd41-11e8-932e-52f07f4ca246.png)
+  
+    Depois vá em Runner ... vamos configurar nosso Runner. Vejamos que temos nenhum runner configurado
+   
+   ![image](https://user-images.githubusercontent.com/45598049/49811432-05b1b000-fd42-11e8-9a2b-1f5397ff8a67.png)
+   
+    Com comandos docker, abra o terminal e jogue esse comando 
+    1. docker exec -i -t Gitlab_Runner sudo gitlab-runner register
+   
+   ![image](https://user-images.githubusercontent.com/45598049/49811654-7789f980-fd42-11e8-90c5-7fbe9a295864.png)
   
   3. Não temos nenhum runner configurado ainda, vamos configurar por comandos via docker
   
