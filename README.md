@@ -49,9 +49,10 @@ networks:
     docker-compose up -d
   
   **Acesso ao gitlab:**
-  1. No primeiro acesso ele vai solicitar a nova senha para o usuário “root”.
+  1. Com o IP público da MV para acessar o gitlab apontando para porta 80. No primeiro acesso ele vai solicitar a **nova senha** para o usuário “root”.
   
-                         imagem aqui
+  ![image](https://user-images.githubusercontent.com/45598049/49802444-ac3e8680-fd2b-11e8-8486-92af5b9b261d.png)
+
   
   2. Agora que já acessamos nosso Gitlab, precisamos configurar o Gitlab Runner
   
