@@ -74,7 +74,7 @@ networks:
    - Prómixo passo, é informar o Token que tambem esta na descrição do Gitlab
    - Depois, irá solicitar a tag para o Runner que estamos configurando. como por exemplo: runner01. Essa Tag que você vai        utilizar nos jobs de suas pipelines para que eles funcionem corretamente. Pode usar a opção para que elas                    funcionem sem ela, mas vamos utilizá-la, já que é um processo mais detalhado e é bem legal conhecer.
    - Agora, vamos configurar para que os jobs sem Tags não sejam executados e deixar o runner compartilhado, assim todos           os projetos que tiverem com a Tag runner01 configurada serão executados.
-   - Para concluir o registro, vamos indicar qual executor do Runner vamos usar e a imagem padrão a ser utilizada. Neste           caso vamos usar o executor Docker e uma imagem do alpine:3.5.
+   - Para concluir o registro, vamos indicar qual executor do Runner vamos usar e a imagem padrão a ser utilizada. Neste           caso vamos usar o executor **Docker** e uma imagem do **alpine:3.5**.
        
    ![image](https://user-images.githubusercontent.com/45598049/49935194-2b0ffc80-feaf-11e8-9e96-9702eb5facd3.png)
      
