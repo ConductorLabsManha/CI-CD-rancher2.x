@@ -66,11 +66,16 @@ networks:
    
    ![image](https://user-images.githubusercontent.com/45598049/49811654-7789f980-fd42-11e8-90c5-7fbe9a295864.png)
     
-   Com comandos docker, abra o terminal e cole esse comando, irá regristar nosso primeiro runner :) 
+   3. Com comandos docker, abra o terminal e cole esse comando, irá regristar nosso primeiro runner :) 
     
     1. docker exec -i -t Gitlab_Runner sudo gitlab-runner register
-  
-  3. Não temos nenhum runner configurado ainda, vamos configurar por comandos via docker
-  
-    docker exec -i -t Gitlab_Runner sudo gitlab-runner register
+    
+      - Primeiro passo, é informar a URL do Gitlab
+      - Prómixo passo, é informar o Token que tambem esta na descrição do Gitlab
+      - Depois, irá solicitar a tag para o Runner que estamos configurando. como por exemplo: runner01. Essa Tag que você vai          utilizar nos jobs de suas pipelines para que eles funcionem corretamente. Pode usar a opção para que elas                    funcionem sem ela, mas vamos utilizá-la, já que é um processo mais detalhado e é bem legal conhecer.
+      - Agora, vamos configurar para que os jobs sem Tags não sejam executados e deixar o runner compartilhado, assim todos           os projetos que tiverem com a Tag runner01 configurada serão executados.
+      - Para concluir o registro, vamos indicar qual executor do Runner vamos usar e a imagem padrão a ser utilizada. Neste           caso vamos usar o executor Docker e uma imagem do alpine:3.5.
+       
+   ![image](https://user-images.githubusercontent.com/45598049/49935194-2b0ffc80-feaf-11e8-9e96-9702eb5facd3.png)
+     
   
