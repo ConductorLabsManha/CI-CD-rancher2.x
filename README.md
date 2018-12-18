@@ -79,4 +79,9 @@ networks:
    ![image](https://user-images.githubusercontent.com/45598049/49935194-2b0ffc80-feaf-11e8-9e96-9702eb5facd3.png)
      
    Pronto, temos nosso runner configurado !! uuh uuh
+   
+   # CD RANCHER
+   
+   Requisitos:
+   
   
