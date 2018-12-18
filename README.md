@@ -10,7 +10,7 @@ Requisitos:
 
 Crie uma pasta e dentro dela adicione um arquivo que será nosso docker-compose (Entender sobre Docker-compose [aqui](https://www.concrete.com.br/2017/12/11/docker-compose-o-que-e-para-que-serve-o-que-come/)) para subir o container do gitlab_CI e gitlab_Runner.
 
-precisamos de um **Runner** rodando. humm.. o que seria um Runner?
+Precisamos de um **Runner** rodando. humm.. o que seria um Runner?
 O Runner é uma aplicação que roda separadamente e trabalha junto ao Gitlab CI-CD, executando os deploy e os build das aplicações identificadas. Ou seja, para que você possa efetuar todo workflow de CI/CD é necessária ao menos 1 instância do Gitlab CI/CD e 1 Gitlab Runner rodando em um server, no pc ou docker.
 
 > docker-compose.yml
@@ -89,9 +89,9 @@ networks:
    - Hardware 4GB
     
    1. Em outra maquina virtual (MV), instale com o docker.
-   obs: utilizamos outra MV para utlizar o rancher por motivo de memoria.
+   Obs: utilizamos outra MV para utlizar o rancher por motivo de memória.
      
-   2. Agora, faça a inistalação do Rancher 2.x 
+   2. Agora, faça a instalação do Rancher 2.x 
    
     docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
   
