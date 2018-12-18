@@ -82,6 +82,19 @@ networks:
    
    # CD RANCHER
    
+   O Rancher uma tecnologia de software livre que fornece uma plataforma de gerenciamento de contêiner criada para              organizações que implantam contêineres na produção, no Rancher 2.x facilita a execução do Kubernetes em todos os lugares.
+   
    Requisitos:
+    - Docker
+    - Hardware 4GB
+    
+   1. Em outra maquina virtual (MV), instale com o docker.
+   obs: utilizamos outra MV para utlizar o rancher por motivo de memoria.
+     
+   2. Agora, faça a inistalação do Rancher 2.x 
+   
+    docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
+  
+ 
    
   
