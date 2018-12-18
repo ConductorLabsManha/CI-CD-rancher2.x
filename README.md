@@ -87,14 +87,13 @@ networks:
    Requisitos:
    - Docker
    - Hardware 4GB
+   - CentOS 7
     
    1. Em outra maquina virtual (MV), instale com o docker.
    Obs: utilizamos outra MV para utlizar o rancher por motivo de memória.
+   
+    curl -sfSL http://get.docker.com/ | sh
      
    2. Agora, faça a instalação do Rancher 2.x 
    
     docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
-  
- 
-   
-  
