@@ -1,4 +1,4 @@
-# Provisionando maquinas AWS utilizando o Terraform e Ansible
+# Provisionando máquinas AWS utilizando o Terraform e Ansible
 
 Requisitos:
 - [Terraform](https://learn.hashicorp.com/terraform/getting-started/install)
